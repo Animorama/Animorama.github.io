@@ -412,7 +412,7 @@ main {
   }
 }
 
-.current-project {
+/* .current-project {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -434,4 +434,58 @@ main {
 
 .current-project h3, .current-project p {
   text-align: center; 
+} */
+
+.current-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  padding: 20px;
+
+  border-radius: 10px;
+  background-color: var(--clr-bg); 
+  box-shadow: var(--shadow);
+  width: fit-content;
+  max-width: fit-content; 
 }
+
+.carousel {
+  position: relative;
+  width: 100%; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.carousel__inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel__item {
+  min-width: 100%; /* Adjust to fit one image at a time */
+  display: none;
+}
+
+.carousel__item.active {
+  display: block;
+}
+
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel__button--prev {
+  left: 10px;
+}
+
+.carousel__button--next {
+  right: 10px;
+}
+

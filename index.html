@@ -15,7 +15,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="styles.css" />
-    <title>Joan Mora | Technical Designer</title>
+    <title>Joan Mora | Game Developer</title>
   </head>
   <body class="light" id="top">
     <header class="header center">
@@ -56,7 +56,7 @@
       <!-- About -->
       <div class="about center">
         <h1>Hello! I am <span class="about__name">Joan!</span></h1>
-        <h2 class="about__role">A Junior Technical Designer.</h2>
+        <h2 class="about__role">A Junior Game Developer.</h2>
         <p class="about__desc">
           I'm a Barcelona (Spain) based, video game developer.
 
@@ -93,7 +93,7 @@
         <h2 class="section__title">Current Project</h2>
 
         <!-- Current project section -->
-        <div class="project current-project">
+        <!-- <div class="project current-project">
           <h3>Sokoban Game - Soon on Itch.io</h3>
           <p class="project__description">
             I am currently developing a small Sokoban-style game in Unreal Engine 5 
@@ -101,7 +101,30 @@
             <br> with UE5 and its API, while exploring the interactions of puzzle mechanics.
           </p>
           <img src="assets/SokobanPrototype.gif" alt="Sokoban prototype gif" class="project__gif">
+        </div> -->
+        
+        <!-- Current project section -->
+        <div class="project current-project">
+          <h3>Sokoban Game - Soon on Itch.io</h3>
+          <p class="project__description" style="padding-bottom: 20px;">
+            I am currently developing a small Sokoban-style game in Unreal Engine 5 
+            <br> using C++. This project is helping me become more comfortable working
+            <br> with UE5 and its API, while exploring the interactions of puzzle mechanics.
+          </p>
+
+          <!-- Carousel container -->
+          <div class="carousel">
+            <div class="carousel__inner">
+              <img src="assets/SokobanPrototype1.gif" alt="Sokoban prototype gif 1" class="carousel__item active">
+              <img src="assets/SokobanPrototype2.gif" alt="Sokoban prototype gif 2" class="carousel__item">
+              <img src="assets/SokobanPrototype3.gif" alt="Sokoban prototype gif 3" class="carousel__item">
+            </div>
+            <!-- Navigation buttons -->
+            <button class="carousel__button carousel__button--prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel__button carousel__button--next" onclick="nextSlide()">&#10095;</button>
+          </div>
         </div>
+
 
       </section>
 
